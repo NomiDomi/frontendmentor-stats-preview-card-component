@@ -34,7 +34,8 @@ body {
     margin: auto;
     display: flex;
     align-items: stretch;
-    width: 70vw;
+    width: 1110px;
+    min-width: 1000px;
 }
 
 .card-info {
@@ -109,11 +110,13 @@ body {
 }
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     .card-container {
         flex-direction: column-reverse; 
         width: 90vw;
-        margin-top: 5%;      
+        min-width: 300px; 
+        align-items: center;
+        justify-content: center;
     }
 
     .card-info {
@@ -122,6 +125,8 @@ body {
         padding: 10%;
         border-bottom-right-radius: 10px;
         border-top-left-radius: 0;
+        max-width: 500px;
+        min-width: 300px;
     }
 
     .title {
@@ -157,6 +162,8 @@ body {
         display: flex;
         width: 90vw;
         border-top-left-radius: 10px;
+        max-width: 500px;
+        min-width: 300px;
     }
 
     .card-image .desktop {
